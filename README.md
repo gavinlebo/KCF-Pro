@@ -6,7 +6,7 @@ First, place the KCFPro.py file in the directory with your working file, then im
 ```python
 import KCFPro
 ```
-Next, Initialize the model just like how you would with cv2 tracking algorithms, except include the video object, and the number of frames to predict ahead when overlap occurs. The value of this depends on how large the objects overlapping are, as well as their speed, which effects the amount of time they are overlapping. For most cases ~20 frames should work
+Next, Initialize the model just like how you would with cv2 tracking algorithms, except include the video object, and the number of frames to predict ahead when overlap occurs. The value of this depends on how large the objects overlapping are, as well as their speed, which effects the amount of time they are overlapping. For most cases ~20 frames should work. For smaller or quicker objects, lower this number. For larger or slower objects, increase it. 
 ```python
 tracker = KCFPro.TrackerKCFPro_create(video, 20)
 ```

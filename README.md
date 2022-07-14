@@ -20,3 +20,10 @@ Now, to track an object, use the update method to predict the object at the next
 ```python
 ret, box = tracker.update(frame)
 ```
+
+## Demo
+Below is a demo of a difficult case where there are overlapping objects, as well as rapid change in object profiles (front angle to side angle) and how KCF handles it (first clip), opposed to how KCF-Pro handles it (second clip)
+
+
+https://user-images.githubusercontent.com/80224102/178884843-b0547648-cbe4-430a-89b1-a5a230081983.mp4
+
